@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pletinum gym</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        /* body{background: url(gymb.jpg);
+            background-position: 100%;
+            background-size:calc(130%); */
+        body{ background-color: black;}
+        #navbar::before{
+            content:"";
+            background: url(gymb.jpg);
+            position: absolute;
+            background-position: 100%;
+            background-size:cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity:0.5;
+        }
+        #navbar{
+            /* border: 2px solid greenyellow; */
+            display: flex;
+            color: rgb(100, 216, 23);
+            justify-content: center;
+            justify-content:space-between;
+            background-color:rgba(10, 37, 85, 0.123);
+            font-family:'Courier New', Courier, monospace
+            
+            
+        }
+        .logo{display:flex;
+            height: 40px;
+            filter:invert(100%);
+            margin: 3px 15px;
+        }
+        img{ 
+            border:2px solid rgb(5, 46, 37);
+            border-radius: 20px;
+        }
+        .li{display: flex;
+            list-style-type: none;
+
+        }
+        .item:hover{
+            color: white;
+            background-color: rgb(221, 57, 236);
+            border-radius: 10px;
+            cursor: pointer;
+            
+        }
+        .item{
+            margin: 7px 19px;
+            padding: 4px 9px
+        }
+        .button{
+            margin: 6px 20px;
+            padding: 5px 5px;
+        }
+        #red {background-color: rgb(219, 46, 133);
+            width:60px;
+            height: 25px;
+            border-radius: 10%;
+            cursor: pointer;
+        }
+        #black{background-color: rgb(35, 168, 23);
+            width:60px;
+            height: 25px;
+            border-radius: 10%;
+            cursor: pointer;
+        }
+        .box{
+            /* border: 2px solid green; */
+            display: flex;
+            /* width: 500px; */
+            text-align: center;
+            justify-content: center;
+            margin: 90px 50px;
+            padding: 10px 20px;
+            background-color: rgba(19, 23, 46, 0.219);
+            color: rgb(22, 163, 22);
+            border-radius: 20px;
+        }
+        .frm{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        input{
+            border-radius: 5px;
+            width:200px;
+            height: 17px;
+            background-color:rgb(117, 96, 71);
+        }
+        .img{
+            display: flex;
+            width: 500px;
+            height: 350px;
+            align-content: flex-start;
+            margin: 0px 50px;
+            padding: 10px 20px;
+            background-image: url(said.jpg.png);
+            background-color: rgba(19, 23, 46, 0.219);
+            color: rgb(219, 46, 133);
+            border-radius: 20px;
+            border:3ch solid green;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p{
+            display:flex;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<div id="navbar">
+    <div class="logo"><img src="gyml.jpg" alt=""></div>    
+    <div class="ul">
+        <ul class="li">
+            <li class="item">home</li>
+            <li class="item">avout</li>
+            <li class="item">services</li>
+            <li class="item">contact us</li>
+        </ul>
+    </div>    
+    <div class="button">
+        <button type="button" id="red">clickme</button>
+        <button type="button"id ="black">clickme</button>
+
+    </div>  
+</div>
+<div class="box">
+<form action="backend.php">
+   <div class="frm"> Name : <input type="text" name="myname"></div>
+   <br>
+   <div class="frm"> Age : <input type="text" name="myage"></div>
+   <br>
+   <div class="frm"> Email : <input type="email" name="myemail"></div>
+   <br>
+   <div class="frm"> Phone no : <input type="number" name="mynumber"></div>
+   <br>
+   <div class="frm"> Gender : male <input type="radio" name="mygender">femail<input type="radio" name="mygender"></div>
+   <br>
+   <div class="frm"> Date and time : <input type="date" name="mydate"></div>
+   <br>
+   <div class="submit"><input type="submit" value="submit now"></div>
+
+
+
+</form>
+<div class="img">
+    <p>Strenth doesn't come from what you can do.
+        It comes from overcoming the things you onnce thought you couldn't..|
+    </p>
+
+
+</div>
+</div>
+<body>
+    
+</body>
+</html>
